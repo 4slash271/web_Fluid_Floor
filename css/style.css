@@ -24,6 +24,7 @@
   background-color: white;
 }
 .header__inner li {
+  cursor: pointer;
   font-size: 2em;
   /* margin: 0.5em; */
   /* border: 1px solid red; */
@@ -146,7 +147,7 @@
   color: #666;
 }
 .modal__desc {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .modal__desc--img {
   width: 3em;
