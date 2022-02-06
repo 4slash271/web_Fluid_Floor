@@ -39,7 +39,7 @@
   position: relative;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 0.5);
-  width: 5em;
+  width: 5.11em;
   margin: 0;
   /* background-color: royalblue; */
   padding: 0.5em;
@@ -100,8 +100,16 @@
   margin: 0.5em;
   background-color: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 99;
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
   /* border-right: 1px solid rgba(0, 0, 0, 0.5); */
+}
+.video__screen iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
 }
 .text {
   position: absolute;
@@ -115,10 +123,14 @@
 }
 
 .text__desc {
+  display: none;
   margin: 0.5em;
   width: 25%;
   /* border-right: 1px solid rgba(0, 0, 0, 0.5); */
   font-size: 1.5em;
+}
+.text__desc.active {
+  display: flex;
 }
 /************************** modal  *****************************/
 .modal {
