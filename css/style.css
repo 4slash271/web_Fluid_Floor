@@ -105,11 +105,12 @@
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
   /* border-right: 1px solid rgba(0, 0, 0, 0.5); */
 }
-.video__screen iframe {
-  position: absolute;
+.video__file {
+  /* position: absolute; */
+  object-fit: cover;
+  /*영상이 늘어나지 않고 비율 유지한 채 맞게*/
   width: 100%;
   height: 100%;
-  left: 0;
 }
 .text {
   position: absolute;
@@ -119,18 +120,71 @@
   height: 40em;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .text__desc {
-  display: none;
+  visibility: hidden;
   margin: 0.5em;
   width: 25%;
   /* border-right: 1px solid rgba(0, 0, 0, 0.5); */
   font-size: 1.5em;
 }
 .text__desc.active {
+  visibility: visible;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+/************************** comment  *****************************/
+.comment {
+  width: 100%;
+  /* height: 5em; */
+  background-color: rgb(255, 255, 255);
+  /* border: 1px solid black; */
+  bottom: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.comment__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #fff;
+}
+.comment__form input,
+select {
+  margin-right: 1em;
+  height: 3em;
+  text-align: center;
+  border-radius: 5px;
+}
+.comment__form--name {
+  width: 15em;
+  border: 0.5px solid #555;
+  -webkit-appearance: none; /* 크롬 화살표 없애기 */
+  -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+  appearance: none; /* 화살표 없애기 */
+}
+.comment__form--content {
+  width: 50em;
+  border: 0.5px solid #555;
+}
+.comment__btn {
+  width: 10em;
+  height: 3em;
+  background-color: rgb(191, 203, 236);
+  border-radius: 10px;
 }
 /************************** modal  *****************************/
 .modal {
