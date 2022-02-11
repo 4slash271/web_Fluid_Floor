@@ -3,11 +3,12 @@
 
 /******************************* 글로벌 설정 ********************************/
 let deactivated = document.querySelectorAll(".deactivated");
-let btn = document.querySelector(".modal__btn");
+let modalBtn = document.querySelector(".modal__btn");
 let modal = document.querySelector(".modal");
 let modalBox = document.querySelector(".modal__inner");
 let modalDesc = document.querySelector(".modal__desc");
-
+let mobileBtn = document.querySelector(".date__mobile");
+let mobileNav = document.querySelector(".date__links")
 /******************************* 사용자 함수 *******************************/
 /******************************* 이벤트 등록 ******************************/
 deactivated[0].addEventListener('click',openModal1);
@@ -15,8 +16,16 @@ deactivated[1].addEventListener('click',openModal2);
 deactivated[2].addEventListener('click',openModal1);
 deactivated[3].addEventListener('click',openModal2);
 modal.addEventListener('click',closeModal)
-btn.addEventListener('click',closeModal)
+modalBtn.addEventListener('click',closeModal)
+mobileBtn.addEventListener('mouseover', openMobile);
+mobileBtn.addEventListener('mouseleave', closeMobile);
 /******************************* 이벤트 콜백 *****************************/
+function openMobile(e){
+      mobileNav.style.display = "flex";
+}
+function closeMobile(e){
+      mobileNav.style.display = "";
+}
 function openModal1(e){
 
     modal.style.display="flex";

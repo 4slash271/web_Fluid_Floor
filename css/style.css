@@ -284,32 +284,33 @@ select {
   .date__mobile {
     display: flex;
     flex-direction: column;
-
     position: relative;
     z-index: 99;
+    width: 5.11em;
   }
   .date__mobile .date__mobile__bar {
-    width: 5.11em;
-    font-size: 2em;
-    color: #555;
-    padding: 0.4em;
+    font-size: 1.5em;
+    color: #888;
+    padding: 0.6em;
   }
   .date__mobile .date__links {
+    display: none;
+    flex-direction: column;
     position: absolute;
-    top: 3.55em;
+    top: 3.4em;
   }
   .date__mobile .date__link {
     text-align: center;
-    border: 1px solid rgba(202, 29, 29, 0.5);
-    width: 5.11em;
-    /* height: 3em; */
     margin: 0;
     background-color: #fff;
     padding: 0.5em;
-    /* font-size: 1em; */
+    border-bottom: 1px solid #888;
   }
-  .date__mobile__link a {
+  .date__mobile .date__link:hover {
+    background-color: rgb(233, 233, 233);
+    color: black;
   }
+
   .main {
     display: flex;
     width: 100%;
