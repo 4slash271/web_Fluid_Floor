@@ -11,7 +11,10 @@ let modalDesc = document.querySelector(".modal__desc");
 /******************************* 사용자 함수 *******************************/
 /******************************* 이벤트 등록 ******************************/
 deactivated[0].addEventListener('click',openModal1);
-deactivated[1].addEventListener('click',openModal2);modal.addEventListener('click',closeModal)
+deactivated[1].addEventListener('click',openModal2);
+deactivated[2].addEventListener('click',openModal1);
+deactivated[3].addEventListener('click',openModal2);
+modal.addEventListener('click',closeModal)
 btn.addEventListener('click',closeModal)
 /******************************* 이벤트 콜백 *****************************/
 function openModal1(e){
