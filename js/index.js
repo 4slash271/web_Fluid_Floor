@@ -46,7 +46,7 @@ function closeModal(e){
 } )
 
 
-var video = document.querySelectorAll('.video__screen');
+var video = document.querySelectorAll('.video__file');
 [].forEach.call(video, function(e){ 
     e.addEventListener("click", 
     function(){
