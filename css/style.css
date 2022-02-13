@@ -2,7 +2,15 @@
 * {
   font-family: ‘SUIT’, sans-serif;
 }
-
+video::-webkit-media-controls-play-button {
+  display: none;
+}
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+video::-webkit-media-controls-toggle-closed-captions-button {
+  display: none;
+}
 html,
 body {
   width: 100%;
