@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/info.css">
     <link href="http://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <title>information</title>
 </head>
@@ -14,36 +17,59 @@
     <header class="header">
         <ul class="header__inner">
             <div class="article">
-                <li class="article__link">
-                        <a href="/html/info.html">기획의도</a>
-                </li>
-                <li class="article__link">
-                    <a href="/html/caption.html">작품목록</a>
-                 
-                </li>
-                <li class="article__link">
-                    <a href="/html/contact.html">작가들</a>
-                 
-                </li>
-            </div>
-            <li class="home">
+                <div class="article__web">
+                    <li class="article__link">
+                            <a href="/html/info.html">기획 의도</a>     
+                    </li>
+                    <li class="article__link ">
+                        <a href="/html/caption.html">작품 소개</a>
+                        <div class="activated--mark"></div>
+                    </li>
+                    <li class="article__link ">
+                        <a href="/html/contact.html">작가들</a>
+                        
+                      
+                    </li>
+                </div>
+                <div class="article__mobile">
+                    <i class="article__mobile__bar fa fa-bars"></i>
+                <ul class="article__links">
+                    <li class="article__link">
+                        <a href="/html/info.html">기획 의도</a>
+                       
+                        
+                    </li>
+                    <li class="article__link ">
+                        <a href="/html/caption.html">작품 소개</a><div class="activated--mark"></div>
+                      
+                    </li>
+                    <li class="article__link ">
+                        <a href="/html/contact.html">작가들</a>
+                        
+                     
+                    </li>
+                </ul>
+                </div>
+         </div>
+         <li class="home__link">
                 <a href="/html/index.html">home</a>
                 </li>
         </ul>
-         <ul class="artist">
-        <li class="artist__name">김슬기</li>
-        <li class="artist__name">안다혜</li>
-        <li class="artist__name">안진선</li>
-        <li class="artist__name">홍예준</li>
-    </ul>
+           <ul class="artist">
+              <li class="artist__name">김슬기</li>
+              <li class="artist__name">안다혜</li>
+              <li class="artist__name">안진선</li>
+              <li class="artist__name">홍예준</li>
+         </ul>
     </header>
+  
    
     <div class="main">
         <ul class="text">
             <li class="text__section">
                 <h3 class="text__title">Fluid Floor</h3>
                 <span class="text__desc" >
-                    참여작가: 김슬기, 안다혜, 안진선, 홍예준<br>
+                참여작가: 김슬기, 안다혜, 안진선, 홍예준<br>
                     일시: 2022년 3월 1일 화요일 - 3월 13일 일요일, 오후 1시 - 8시<br>
                     장소: Boloc 서울특별시 성동구 성덕정 11길 18, 지하 1층<br>
                     후원: 루이즈 더 우먼
@@ -145,5 +171,6 @@
         </address>
 
     </footer>
+    <script src="../js/info.js"></script>
 </body>
 </html>

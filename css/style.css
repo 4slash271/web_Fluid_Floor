@@ -17,10 +17,6 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
-  /* padding-top: 75px; */
 }
 
 /************************** navigation *****************************/
@@ -404,6 +400,11 @@ body {
   }
   .modal__desc {
     margin: 1em 0;
+  }
+}
+@media (max-width: 404px) {
+  .info__link a {
+    font-size: 0.8em;
   }
 }
 @media (max-width: 345px) {
