@@ -2,12 +2,12 @@
 * {
   font-family: ‘SUIT’, sans-serif;
 }
-video::-webkit-media-controls-play-button {
+/* video::-webkit-media-controls-play-button {
   display: none;
-}
-video::-webkit-media-controls-fullscreen-button {
+} */
+/* video::-webkit-media-controls-fullscreen-button {
   display: none;
-}
+} */
 
 html,
 body {
