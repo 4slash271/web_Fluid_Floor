@@ -1,13 +1,12 @@
-/* @import url('../css/info.css'); */
 * {
-  font-family: ‘SUIT’, sans-serif;
+  font-family: ‘SUIT’, sans-serif, AppleSDGothic !important;
 }
 /* video::-webkit-media-controls-play-button {
   display: none;
 } */
-/* video::-webkit-media-controls-fullscreen-button {
+video::-webkit-media-controls-fullscreen-button {
   display: none;
-} */
+}
 
 html,
 body {
