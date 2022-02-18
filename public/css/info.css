@@ -112,7 +112,7 @@ sub:hover {
   z-index: 1;
 }
 .text {
-  margin: 2em 15em 10em 15em;
+  margin: 2em 5em 10em 5em;
   line-height: 1.5;
 }
 .contact {
@@ -217,6 +217,16 @@ sub:hover {
 }
 /************************** response ****************************/
 @media (max-width: 2300px) {
+  .text {
+    margin: 2em 15em 10em 15em;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 1800px) {
+  .text {
+    margin: 2em 5em 10em 5em;
+    line-height: 1.5;
+  }
 }
 @media (max-width: 1500px) {
   .info__inner {
