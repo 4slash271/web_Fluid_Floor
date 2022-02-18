@@ -374,9 +374,9 @@ sub:hover {
     position: relative;
     width: 5.11em;
   }
-  .article__mobile__bar.fa {
+  .article__mobile__bar {
     font-size: 1.5em;
-    color: #888;
+    color: rgb(51, 51, 51);
     padding: 0.6em;
   }
   .article__mobile .article__links {
