@@ -70,8 +70,8 @@ sub:hover {
   height: 0.3em;
   border-radius: 50%;
   background-color: rgb(247, 37, 0);
-  top: 27%;
-  right: 24%;
+  top: 24%;
+  right: 17%;
 }
 .article__link a {
   font-size: 70%;
