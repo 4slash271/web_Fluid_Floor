@@ -103,7 +103,7 @@ body {
   border-radius: 50%;
   background-color: rgb(247, 37, 0);
   top: 14%;
-  right: calc(45% - 0.8em);
+  right: calc(45% - 0.1em);
   z-index: 99;
 }
 /************************** main  *****************************/
@@ -206,7 +206,7 @@ body {
 /************************** response ****************************/
 @media (max-width: 2300px) {
   .artist__activated--mark {
-    right: calc(44.5% - 0.3em);
+    right: calc(44.5% - 0.1em);
   }
   .text__desc {
     font-size: 1.4em;
