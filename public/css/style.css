@@ -256,8 +256,8 @@ body {
     right: calc(45% - 1em);
   }
   .modal__inner {
-    width: 30%;
-    height: 30%;
+    width: 20em;
+    height: 15em;
   }
 }
 @media (max-width: 992px) {
@@ -348,7 +348,7 @@ body {
   }
   .date__mobile .date__mobile__bar {
     font-size: 1.5em;
-    color: #888;
+    color: rgb(51, 51, 51);
     padding: 0.6em;
   }
   .date__mobile .date__links {
@@ -440,9 +440,6 @@ body {
     padding: 2em;
     font-size: 0.8em;
   }
-  .modal__desc {
-    /* margin: 1em 0; */
-  }
 }
 @media (max-width: 404px) {
   .artist__activated--mark {
@@ -451,8 +448,19 @@ body {
   .info__link a {
     font-size: 0.8em;
   }
+  .text__desc.active {
+    visibility: visible;
+    padding: 0.8em 0.1em 0 0.1em;
+    z-index: 1;
+    width: 100%;
+    font-size: 1em;
+    overflow: scroll;
+    height: 15em;
+    line-height: 1.4;
+    animation: slide-bottom2 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
 }
-@media (max-width: 345px) {
+@media (max-width: 375px) {
   .artist__activated--mark {
     right: calc(45% - 1.4em);
   }
