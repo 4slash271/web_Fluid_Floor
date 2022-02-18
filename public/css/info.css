@@ -401,8 +401,6 @@ sub:hover {
     background-color: rgb(233, 233, 233);
     color: black;
   }
-  .info__inner {
-  }
   .info__title {
     margin-bottom: 0.5em;
   }

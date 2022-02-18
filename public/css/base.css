@@ -117,10 +117,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-a,
-label {
-  /* display: inline-block; */
-}
 a:link,
 a:visited,
 a:hover,
