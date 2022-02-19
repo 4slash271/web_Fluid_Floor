@@ -13,7 +13,21 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+}
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: rgb(63, 56, 56);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.loader h3 {
+  font-size: 10em;
 }
 
 /************************** navigation *****************************/
@@ -107,6 +121,13 @@ body {
   z-index: 99;
 }
 /************************** main  *****************************/
+.hide__section {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 1.2em;
+  z-index: 3;
+}
 .main {
   display: flex;
   width: 100%;
@@ -133,15 +154,16 @@ body {
   object-fit: cover;
   width: 100%;
   position: sticky;
-  top: 0;
+  top: 8em;
   z-index: 2;
 }
 .text__desc {
-  overflow-y: scroll;
+  z-index: 1;
+  /* overflow-y: scroll; */
   visibility: hidden;
   padding: 0.5em 0 0 1em;
   width: 100%;
-  height: calc(80%);
+  height: 80%;
   font-size: 1.3em;
   line-height: 1.4;
 }
@@ -244,6 +266,9 @@ body {
   }
 }
 @media (max-width: 1200px) {
+  .loader h3 {
+    font-size: 8em;
+  }
   .artist__activated--mark {
     right: calc(45% - 0.9em);
   }
@@ -261,6 +286,9 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .loader h3 {
+    font-size: 6em;
+  }
   .artist__activated--mark {
     right: calc(45% - 1.1em);
   }
@@ -270,6 +298,9 @@ body {
   }
 }
 @media (max-width: 820px) {
+  .hide__section {
+    visibility: hidden;
+  }
   body {
     overflow-y: scroll;
   }
@@ -304,6 +335,7 @@ body {
     object-fit: cover;
     width: 100%;
     position: unset;
+    top: 0;
   }
   .text__desc {
     padding: 0 0.1em;
@@ -334,6 +366,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .loader h3 {
+    font-size: 5em;
+  }
   body {
     overflow-y: scroll;
   }
@@ -461,6 +496,9 @@ body {
   }
 }
 @media (max-width: 375px) {
+  .loader h3 {
+    font-size: 3em;
+  }
   .artist__activated--mark {
     right: calc(45% - 1.4em);
   }
