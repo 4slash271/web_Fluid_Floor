@@ -90,7 +90,7 @@ sub:hover {
   display: flex;
   justify-content: flex-end;
   margin: 0;
-  margin-right: 2em;
+  margin-right: 0.8em;
 }
 /*********************** artist-bar **************************/
 .artist {
