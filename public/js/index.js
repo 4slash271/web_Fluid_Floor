@@ -58,12 +58,12 @@ function closeMobile(e){
 function openModal1(e){
 
     modal.style.display="flex";
-    modalDesc.innerHTML = "2022년 3월 1일 이후에 기록됩니다."
+    modalDesc.innerHTML = "2022년 3월 1일 14시 이후에 기록됩니다."
    }
    function openModal2(e){
    
     modal.style.display="flex";
-    modalDesc.innerHTML = "2022년 3월 6일 이후에 기록됩니다."
+    modalDesc.innerHTML = "2022년 3월 6일 14시 이후에 기록됩니다."
    
    }
 
