@@ -13,7 +13,7 @@
 
     <title>Fluid Floor</title>
 </head>
-<body>
+<body class="body__info">
     <div class="loader">
         <img src="../src/img/dummy_video.png" alt="">
      </div>
@@ -136,25 +136,7 @@
         </address>
 
     </footer>
-    <script>
-        var loader = document.querySelector(".loader"); 
-        var currentHeight = window.innerHeight;
-        console.log(window.innerHeight);
-        window.onbeforeunload = function () { 
-            setTimeout(showLoader, 500);
-            function showLoader(){
-                loader.style.visibility = "visible";  
-                window.style.height=currentHeight ;
-            }
-           }  //현재 페이지에서 다른 페이지로 넘어갈 때 표시해주는 기능
-        window.onload= function(){
-            setTimeout(hideLoader, 4000);
-            function hideLoader(){
-                loader.style.visibility = "hidden";
-            }   
-        }
-       
-    </script>
+
     <!-- <script src="../js/index.js"></script> -->
     <script src="../js/info.js"></script>
 
