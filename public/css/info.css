@@ -11,17 +11,7 @@ body {
 .body__info {
   overflow-y: hidden;
 }
-sub {
-  /* vertical-align: center; */
-  color: rgba(71, 71, 71, 0.473);
-  font-style: italic;
-  letter-spacing: 0.05em;
-  line-height: 0.1rem;
-}
-sub:hover {
-  /* color: rgb(49, 47, 182); */
-  text-shadow: 2px 2px 15px rgba(206, 8, 120, 0.76);
-}
+
 .loader {
   visibility: hidden;
   position: absolute;
@@ -37,6 +27,17 @@ sub:hover {
 .loader img {
   width: 80%;
   /* height: 100%; */
+}
+sub {
+  /* vertical-align: center; */
+  color: rgba(71, 71, 71, 0.473);
+  font-style: italic;
+  letter-spacing: 0.05em;
+  line-height: 0.1rem;
+}
+sub:hover {
+  /* color: rgb(49, 47, 182); */
+  text-shadow: 2px 2px 15px rgba(206, 8, 120, 0.76);
 }
 
 /*********************** navigation **************************/
@@ -82,15 +83,6 @@ sub:hover {
   display: none;
   z-index: 2;
 }
-.activated--mark {
-  position: absolute;
-  width: 0.3em;
-  height: 0.3em;
-  border-radius: 50%;
-  background-color: rgb(247, 37, 0);
-  top: 24%;
-  right: 17%;
-}
 .contact--mark {
   position: absolute;
   width: 0.3em;
@@ -100,6 +92,25 @@ sub:hover {
   top: 24%;
   right: 24%;
 }
+.info--mark {
+  position: absolute;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background-color: rgb(247, 37, 0);
+  top: 24%;
+  right: 12%;
+}
+.caption--mark {
+  position: absolute;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background-color: rgb(247, 37, 0);
+  top: 24%;
+  right: 15%;
+}
+
 .article__link a {
   font-size: 70%;
 }

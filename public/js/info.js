@@ -26,7 +26,7 @@ window.onbeforeunload = function () {
     }
 }  //현재 페이지에서 다른 페이지로 넘어갈 때 표시해주는 기능
 window.onload= function(){
-    setTimeout(hideLoader, 1000);
+    setTimeout(hideLoader, 1500);
     function hideLoader(){
         loader.style.visibility = "hidden";
         body.style.overflowY = "unset";
