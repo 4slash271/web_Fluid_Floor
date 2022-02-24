@@ -28,7 +28,6 @@ window.onbeforeunload = function () {
 window.onload= function(){
     setTimeout(hideLoader, 1000);
     function hideLoader(){
-        console.log("hi");
         loader.style.visibility = "hidden";
         body.style.overflowY = "unset";
        
