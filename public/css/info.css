@@ -183,14 +183,16 @@ sub:hover {
   margin-bottom: 1em;
   color: rgb(104, 104, 104);
 }
+.tooltip {
+}
 /************************** caption ****************************/
 .caption {
   display: grid;
   justify-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 50px;
-  width: 70%;
+  width: 80%;
   margin: 0.5em 3.5em;
 }
 .caption__box {
@@ -205,12 +207,19 @@ sub:hover {
 .caption__photo {
   margin-top: 1em;
   width: 80%;
+  opacity: 0.45;
 }
 .caption__photo > img {
   width: 100%;
 }
+.caption__box > span {
+  font-size: 0.7em;
+  color: rgb(136, 136, 136);
+  margin: 0.5em 0;
+}
 .caption__desc {
-  font-size: 0.8em;
+  font-size: 0.7em;
+  padding: 0 0.5em;
 }
 /************************** info ****************************/
 .contact > .text__section > .text__title {
@@ -300,6 +309,11 @@ sub:hover {
   }
 }
 @media (max-width: 1500px) {
+  .caption {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 70%;
+  }
   .info__inner {
     height: 24em;
     width: 49%;

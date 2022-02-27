@@ -74,7 +74,13 @@
        
     </div>
 </div>
+<script>var agent = navigator.userAgent.toLowerCase();
+  if( agent.indexOf("edge") != -1) window.location = "../html/ie.banner.html";
+  if( agent.indexOf("msie") != -1) window.location = "../html/ie.banner.html";
+  </script>
 <script>
+
+
   let modalBtn = document.querySelector(".modal__btn");
   let modal = document.querySelector(".modal");
   let modalBox = document.querySelector(".modal__inner");

@@ -1,4 +1,7 @@
 
+  var agent = navigator.userAgent.toLowerCase();
+  if( agent.indexOf("edge") != -1) window.location = "../html/ie.banner.html";
+  if( agent.indexOf("msie") != -1) window.location = "../html/ie.banner.html";
 
 
 /******************************* 글로벌 설정 ********************************/
