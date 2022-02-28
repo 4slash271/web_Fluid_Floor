@@ -183,8 +183,7 @@ sub:hover {
   margin-bottom: 1em;
   color: rgb(104, 104, 104);
 }
-.tooltip {
-}
+
 /************************** caption ****************************/
 .caption {
   display: grid;
@@ -207,16 +206,15 @@ sub:hover {
 .caption__photo {
   margin-top: 1em;
   width: 80%;
-  opacity: 0.45;
 }
 .caption__photo > img {
   width: 100%;
 }
-.caption__box > span {
+/* .caption__box > span {
   font-size: 0.7em;
   color: rgb(136, 136, 136);
   margin: 0.5em 0;
-}
+} */
 .caption__desc {
   font-size: 0.7em;
   padding: 0 0.5em;
