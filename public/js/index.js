@@ -1,12 +1,12 @@
 
   var agent = navigator.userAgent.toLowerCase();
   if( agent.indexOf("edge") != -1) window.location = "../html/ie.banner.html";
-  if( agent.indexOf("msie") != -1) window.location = "../html/ie.banner.html";
+  if( agent.indexOf('Trident')>-1 ) window.location = "../html/ie.banner.html";
 
 
 
 /******************************* 글로벌 설정 ********************************/
-let deactivated = document.querySelectorAll(".deactivated");
+// let deactivated = document.querySelectorAll(".deactivated");
 let modalBtn = document.querySelector(".modal__btn");
 let modal = document.querySelector(".modal");
 let modalBox = document.querySelector(".modal__inner");
@@ -15,21 +15,31 @@ let mobileBtn = document.querySelector(".date__mobile");
 let mobileNav = document.querySelector(".date__links")
 var video = document.querySelectorAll('.video__file');
 [].forEach.call(video, function(e){ 
-    e.addEventListener("click", 
-    function(){
-      let artistName = this.parentNode.id;
-      sendName(artistName);
-      console.log(artistName); 
-        openText(video, e);
-    }
-        , false); 
+  e.onplaying = function videoPlay(){
+    let artistName = this.parentNode.id;
+    sendName(artistName);
+    console.log(artistName); 
+      openText(video, e);}
+  e.onpause = function videoStop(){
+    let artistName = this.parentNode.id;
+    sendName(artistName);
+    console.log(artistName); 
+      closeText(video, e);}
+        
   });
 function openText(video, e){
 
      getElementIndex(video, e);
      console.log(getElementIndex(video, e));
      let text = document.querySelectorAll(".text__desc");
-     text[getElementIndex(video, e)].classList.toggle('active');   
+     text[getElementIndex(video, e)].classList.add('active');   
+}  
+function closeText(video, e){
+
+     getElementIndex(video, e);
+     console.log(getElementIndex(video, e));
+     let text = document.querySelectorAll(".text__desc");
+     text[getElementIndex(video, e)].classList.remove('active');   
 }  
 
   function getElementIndex(e, range) { //getElementIndex를 실행: 
@@ -39,12 +49,11 @@ function openText(video, e){
   }
 /******************************* 사용자 함수 *******************************/
 /******************************* 이벤트 등록 ******************************/
-deactivated[0].addEventListener('click',openModal1);
-deactivated[1].addEventListener('click',openModal2);
-deactivated[2].addEventListener('click',openModal1);
-deactivated[3].addEventListener('click',openModal2);
-modal.addEventListener('click',closeModal)
-modalBtn.addEventListener('click',closeModal)
+// deactivated[0].addEventListener('click',openModal);
+// deactivated[1].addEventListener('click',openModal);
+
+// modal.addEventListener('click',closeModal)
+// modalBtn.addEventListener('click',closeModal)
 mobileBtn.addEventListener('mouseover', openMobile);
 mobileBtn.addEventListener('mouseleave', closeMobile);
 
@@ -59,25 +68,19 @@ function openMobile(e){
 function closeMobile(e){
       mobileNav.style.display = "";
 }
-function openModal1(e){
+// function openModal(e){
 
-    modal.style.display="flex";
-    modalDesc.innerHTML = "2022년 3월 1일 이후에 기록됩니다."
-   }
-   function openModal2(e){
-   
-    modal.style.display="flex";
-    modalDesc.innerHTML = "2022년 3월 6일 이후에 기록됩니다."
-   
-   }
+//     modal.style.display="flex";
+//     modalDesc.innerHTML = "2022년 3월 6일 이후에 기록됩니다."
+//    }
+  
 
-function closeModal(e){
-    modal.style.display="none";
-}
-   modalBox.addEventListener('click',function(e) {
-  e.stopPropagation()
-} )
-
+//    function closeModal(e){
+//     modal.style.display="none";
+// }
+//    modalBox.addEventListener('click',function(e) {
+//   e.stopPropagation()
+// } )
 
 
 
